@@ -3,6 +3,7 @@ import os
 import redis
 import socket
 
+
 app = FastAPI()
 redis_host = os.environ.get("REDIS_HOST") or "host.docker.internal"
 cache = redis.client.Redis(host=redis_host)
