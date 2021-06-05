@@ -8,10 +8,27 @@ pip install -r requirements.txt
 vscode extension used to create docker: 
 > ms-azuretools.vscode-docker
 
+(optional)
+note: to run using docker compose: 
+follow **docker_compose_install.md** to install docker compose 
+
+
 # to Run
 
 ```
 python -m uvicorn main:app --reload
+```
+
+## to run using docker-compose 
+
+to start all the containers
+```
+docker-compose -f "docker-compose.yml" up -d --build
+```
+
+to close all the containers
+```
+docker-compose -f "docker-compose.yml" down
 ```
 
 # troubleshooting
