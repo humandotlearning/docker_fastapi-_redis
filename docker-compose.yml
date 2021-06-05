@@ -13,9 +13,8 @@ services:
 
   redis:
     image: redis:latest
-    volumes: 
+    volumes:
       - redis-vol:/data
 
 volumes:
   redis-vol:
-  

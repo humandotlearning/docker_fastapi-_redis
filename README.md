@@ -5,12 +5,12 @@ sudo apt-get install redis-server
 pip install -r requirements.txt
 ```
 
-vscode extension used to create docker: 
+vscode extension used to create docker:
 > ms-azuretools.vscode-docker
 
 (optional)
-note: to run using docker compose: 
-follow **docker_compose_install.md** to install docker compose 
+note: to run using docker compose:
+follow **docker_compose_install.md** to install docker compose
 
 
 # to Run
@@ -19,7 +19,7 @@ follow **docker_compose_install.md** to install docker compose
 python -m uvicorn main:app --reload
 ```
 
-## to run using docker-compose 
+## to run using docker-compose
 
 to start all the containers
 ```
@@ -49,7 +49,7 @@ start/ stop redis server
 # stop redis server and
 /etc/init.d/redis-server stop
 
-# start redis server 
+# start redis server
 /etc/init.d/redis-server start
 ```
 
