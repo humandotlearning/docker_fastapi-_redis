@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  dockerfastapiredis:
+    image: dockerfastapiredis
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
+    environment:
+      - REDIS_HOST=redis
+
+  redis:
+    image: redis:latest
+    volumes: 
+      - redis-vol:/data
+
+volumes:
+  redis-vol:
+  
